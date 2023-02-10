@@ -150,18 +150,20 @@ body {
 .wrapper {
    height:100%;
    width: 100%;
-   border-radius: 15px;
+   border-radius: 20px;
    box-shadow: inset ;
    overflow: hidden;
    position: relative;
+   box-shadow: inset 0 0 200px $black;
 }
 
 .noise {
-   background-image: url(../img/noise.png);
+   background-image:radial-gradient(25.5% 100% at 100% 100%, #ecc94b 9%, rgba(235, 183, 63, 0.83) 24.17%, rgba(233, 164, 52, 0.67) 39.33%, rgba(232, 144, 41, 0.5) 54.5%, rgba(234, 122, 29, 0.33) 69.67%, rgba(255, 0, 0, 0) 100%), radial-gradient(100% 100% at 0% 50%, #f6e05e 19%, rgba(235, 182, 87, 0.75) 32%, rgba(222, 140, 77, 0.5) 45%, rgba(177, 56, 94, 0) 71%);
+   filter: blur(10px);
    background-repeat: repeat;
    height: 100%;
    width: 100%;
-   opacity: .06;
+   opacity: 1;
    position: absolute;
    top: 0%;
    left: 0%;
@@ -169,7 +171,8 @@ body {
    pointer-events: none;
 }
 .old {
-   background-image: url(../img/old.jpg);
+   background-image: url(../img/noise.png);
+   //background-image: url(../img/old.jpg);
    background-repeat: no-repeat;
    background-size: cover;
    background-position-x: right;
@@ -178,7 +181,7 @@ body {
    height: 100%;
    width: 100%;
    opacity: .4;
-   z-index: -1.1;
+   z-index: -1;
    pointer-events: none;
 }
 
