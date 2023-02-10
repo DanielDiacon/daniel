@@ -1,3 +1,53 @@
+.header {
+   padding: 15px;
+   &__logo {
+      font-family: $fontFamilyLogo;
+      font-size: 80px;
+      letter-spacing: -20px;
+      color: $mainColor;
+      z-index: 10;
+      font-weight: 800;
+      @media only screen and (max-width:$mobile) {
+         font-size: 60px;
+         letter-spacing: -15px;
+      }
+   }
+   &__menu {
+   }
+}
+
+.menu {
+
+   // .menu__burger
+
+   &__burger {
+   }
+
+   // .menu__line
+
+   &__line {
+   }
+
+   // .menu__body
+
+   &__body {
+   }
+
+   // .menu__list
+
+   &__list {
+   }
+
+   // .menu__item
+
+   &__item {
+   }
+
+   // .menu__link
+
+   &__link {
+   }
+}
 
 
 // adapted burger <====================================================================================================================================================================================================================================>

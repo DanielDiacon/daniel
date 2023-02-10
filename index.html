@@ -30,24 +30,26 @@
    <!-- style css -->
    <link rel="stylesheet" href="css/style.css">
    <!-- javascript code -->
-   <script defer src="./js/lightbox-plus-jquery.js"></script>
    <script defer src="js/script.js"></script>
    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   <script defer src="js/slick.min.js"></script>
-   <script defer src="js/scroll-out.js"></script>
    <title>Daniel</title>
 </head>
 
 <body>
+   <!-- loading page -->
+   <div class="loader" id="loader">
+      <div class="spinner"></div>
+   </div>
    <div class="wrapper">
+      <!-- back ground -->
+      <div class="noise"></div>
+      <div class="old"></div>
 
-      <!-- loading page -->
-      <div class="loader" id="loader">
-         <div class="spinner"></div>
-      </div>
-
-      <!--header-->
+      <!-- body  -->
       <header class="header">
+         <div class="header__logo">
+            daniel
+         </div>
          <div class="header__menu menu">
             <button type="button" id="burger" class="menu__burger"><span class="menu__line" id="burger"></span></button>
             <nav class="menu__body" id="menu">
@@ -58,15 +60,13 @@
          </div>
       </header>
 
-      <!--main-->
-      <main class="main">
-      </main>
 
-      <!-- footer -->
-      <footer class="footer">
-      </footer>
+
+
+
 
    </div>
+
 </body>
 
 </html>
