@@ -444,6 +444,10 @@ body {
   border-radius: 5px;
   color: #f0ebeb;
   font-size: 16px;
+  transition: 0.2s;
+}
+.footer__social:hover {
+  background: rgba(16, 16, 20, 0.8);
 }
 @media only screen and (max-width: 767.98px) {
   .footer__links {
@@ -460,5 +464,16 @@ body {
   }
   .footer__social {
     display: none;
+  }
+}
+@media only screen and (max-width: 479.98px) {
+  .footer__copy span {
+    display: none;
+  }
+  .footer__copy {
+    font-size: 20px;
+  }
+  .footer__icon {
+    font-size: 30px;
   }
 }
