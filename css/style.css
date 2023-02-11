@@ -517,10 +517,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: center;
+  justify-content: start;
 }
 
 .about {
+  padding-top: 100px;
   max-width: 900px;
 }
 .about__title {
@@ -535,6 +536,7 @@ body {
   width: 100%;
   padding: 0px;
   margin-left: 10px;
+  justify-content: center;
 }
 .portofolio__list {
   -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0), #000, #000, rgba(0, 0, 0, 0));
@@ -566,6 +568,7 @@ body {
 }
 
 .contacts {
+  padding-top: 100px;
   max-width: 900px;
 }
 .contacts__title {
