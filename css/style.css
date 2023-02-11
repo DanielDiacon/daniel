@@ -528,8 +528,18 @@ body {
   padding-bottom: 15px;
   text-align: left;
 }
+@media only screen and (max-width: 479.98px) {
+  .about__title {
+    font-size: 25px;
+  }
+}
 .about__text {
   text-align: left;
+}
+@media only screen and (max-width: 479.98px) {
+  .about__text {
+    font-size: 16px;
+  }
 }
 
 .portofolio .section__body {
@@ -573,4 +583,14 @@ body {
 }
 .contacts__title {
   padding-bottom: 15px;
+}
+@media only screen and (max-width: 479.98px) {
+  .contacts__title {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 479.98px) {
+  .contacts__text {
+    font-size: 16px;
+  }
 }
