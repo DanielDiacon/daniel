@@ -3,7 +3,11 @@
    padding: 15px;
    display: flex;
    justify-content: space-between;
+   &__logo-wrapper{
+      z-index: 10;
+   } 
    &__logo {
+      margin-top: -2px;
       font-family: $fontFamilyLogo;
       font-size: 80px;
       letter-spacing: -20px;
@@ -91,7 +95,7 @@ body.lock
    &__link {
       padding: 0;
       background: rgba($color: $black, $alpha: 0.0);
-      font-size: 30px;
+      font-size: 25px;
       text-align: center;
       width: 100%;
    }
