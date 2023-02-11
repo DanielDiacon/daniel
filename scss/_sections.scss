@@ -1,0 +1,83 @@
+.section {
+   position: absolute;
+   left:  0;
+   top: 0;
+   height: 100%;
+   width: 100%;
+   visibility: hidden;
+   pointer-events: none;
+   display: flex;
+   align-items: start;
+   z-index: 1;
+   transition: .2s;
+   opacity: 0;
+   &.active{
+      pointer-events: all;
+      visibility: visible;
+      opacity: 1;
+      z-index: 1;
+      transition: .2s;
+   }
+   &__body{
+      width: 100%;
+      padding: 0 15px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+   }
+}
+
+.about {
+   max-width: 900px;
+   &__title {
+      padding-bottom: 15px;
+      text-align: left;
+   }
+   &__text{
+      text-align: left;
+   }
+}
+
+.portofolio {
+   .section__body{
+      width: 100%;
+      padding: 0px;
+      margin-left:  10px;
+   }
+   &__list {
+      mask-image: linear-gradient(to top, #0000, #000, #000, #0000);
+      height: 50svh;
+      width:100%;
+      pointer-events: all;
+      z-index: 100;
+      overflow-y: scroll;
+   }
+}
+.project {
+   padding-bottom: 15px;
+   transition: .2s;
+   width: auto;
+   &:hover{
+      letter-spacing: 1.5px;
+   }
+   &:first-child{
+      padding-top: 80px;
+   }
+   &:last-child{
+      padding-bottom: 80px;
+   }
+   &__data {
+      padding-top: 5px;
+      opacity: .7;
+   }
+}
+
+.contacts {
+   max-width: 900px;
+   &__title {
+      padding-bottom: 15px;
+   }
+}
+

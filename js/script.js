@@ -16,30 +16,32 @@ document.onclick = function (e) {
    }
 };
 
-
-// header show <=>
-//var lastScrollTop = 0;
-//   navbar = document.getElementById('navbar');
-//window.addEventListener("scroll" , function(){
-//   var scrollTop = window.pageXOffset || document.documentElement.scrollTop;
-//   if (scrollTop > lastScrollTop){
-//      navbar.style.top='-50px'
-//   } else {
-//      navbar.style.top='0'
-//   }
-//   lastScrollTop = scrollTop;
-//});
-
-
-//  animation for scroll <=>
-//ScrollOut({
-//   targets: '.title , .text , .block'
-//});
-
-
 // loading page <=>
 const loader = document.getElementById("loader");
 window.addEventListener("load", function () {
    loader.style.display = "none";
 });
 
+// sections control
+const about = document.getElementById('about');
+const secAbout = document.getElementById('secAbout');
+const portofolio = document.getElementById('portofolio');
+const secPortofolio = document.getElementById('secPortofolio');
+const contacts = document.getElementById('contacts');
+const secContacts = document.getElementById('secContacts');
+
+about.onclick = function () {
+   secPortofolio.classList.remove('active');
+   secContacts.classList.remove('active');
+   secAbout.classList.add('active');
+};
+portofolio.onclick = function () {
+   secPortofolio.classList.add('active');
+   secContacts.classList.remove('active');
+   secAbout.classList.remove('active');
+};
+contacts.onclick = function () {
+   secContacts.classList.add('active');
+   secPortofolio.classList.remove('active');
+   secAbout.classList.remove('active');
+};

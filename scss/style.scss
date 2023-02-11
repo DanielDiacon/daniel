@@ -43,11 +43,14 @@ body {
 // title  <=>
 .title {
    font-weight: 800;
-   font-size: 40px;
+   font-size: 30px;
+   color: $white;
 }
 // text  <=>
 .text {
-   opacity: .9;
+   color: $white;
+   opacity: .95;
+   font-size: 18px;
 }
 
 // scroll bar <=>
@@ -82,11 +85,11 @@ body {
 
 //loading page style<=>
 .loader{
-   z-index: 200;
-   position: absolute;
+   z-index: 20;
+   position: fixed;
    width: 100%;
    height: 100vh; 
-   background: $white;
+   background: $black;
    transition: .5s;
    display: flex;
    justify-content: center;
@@ -96,7 +99,7 @@ body {
    width: 56px;
    height: 56px;
    border-radius: 50%;
-   border: 9px solid $white;
+   border: 9px solid $mainColor;
    animation: spinner-bulqg1 0.8s infinite linear alternate,
         spinner-oaa3wk 1.6s infinite linear;
 }
@@ -172,7 +175,6 @@ body {
 }
 .old {
    background-image: url(../img/noise.png);
-   //background-image: url(../img/old.jpg);
    background-repeat: no-repeat;
    background-size: cover;
    background-position-x: right;
@@ -189,3 +191,4 @@ body {
 //import scss modules<=>
 @import "_header.scss";
 @import "_footer.scss";
+@import "_sections.scss";
