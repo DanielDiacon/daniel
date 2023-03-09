@@ -187,6 +187,25 @@ body {
    pointer-events: none;
 }
 
+.its-old-site {
+   z-index: 19;
+   position: fixed;
+   bottom: 70px;
+   right: 20px;
+   width: 200px;
+   padding: 15px;
+   margin: 15px;
+   border-radius: 5px;
+   background: $mainColor;
+}
+.new-daniel {
+   color: purple;
+   font-weight: 800; 
+   cursor: pointer;
+   pointer-events: all;
+   user-select: none;
+}
+
 
 //import scss modules<=>
 @import "_header.scss";
